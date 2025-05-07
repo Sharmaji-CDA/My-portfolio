@@ -192,6 +192,22 @@ main hr{
     margin-left: 150px;
     margin-right: 150px;
 }
+.five-section .card .mb-3{
+    display: flex;
+    flex-direction: column;
+}
+.five-section .card .mb-3 input{
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+.five-section .card .mb-3 textarea{
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
 .five-section .card .text-center .btn{
     background: teal;
     width: 100%;
