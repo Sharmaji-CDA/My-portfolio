@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Swiper.js CSS & JS CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@400;600;700;&display=swap" rel="stylesheet">
+        <title>Ashu's Portfolio</title>
+    </head>
+    <body>
+        <header class="fixed-top">
+            <nav>
+                <div class="left">Ashu's Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Projects</a></li>
+                        <li><a href="/">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="first-section">
+                <div class="left-section">
+                    Hello, I'm a <span id="element"></span>
+                    <div class="desc">Ashutosh Sharma is a skilled Web developer having 2.5 years of experience in Jr. Software Developer. He specializes in building scalable applications,
+                         crafting responsive user interfaces with <span class="purple">Angular</span>, <span class="purple">React.JS</span> or <span class="purple">Next.JS</span>, <span class="purple">HTML</span>, <span class="purple">Bootstrap</span> and implementing robust backend systems using <span class="purple">Node.js</span> and <span class="purple">Mysql</span>.
+                          Passionate about learning and problem-solving, he is driven to create impactful, real-world projects.</div>
+                </div>
+                <div class="right-section">
+                    <img src="bg.webp" alt="" />
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="second-section">
+                <span class="text-gray">What i have done so far</span>
+                <h1>Work Experience</h1>
+                <div class="box"></div>
+                <div class="work-header">Plusone Technologies</div>
+                <div class="work-title">
+                    Jr. Software Developer <span class="text-gray">( Sep 2023 - Dec 2024 )</span>
+                </div>
+                <div class="work-desc">
+                    <span id="one"></span>
+                </div>
+                <div>
+                    <!-- <div class="box"></div> -->
+                    <div class="work-header">Ulysta IT Services & Counsultancy</div>
+                    <div class="work-title">
+                         Web Developer <span class="text-gray">( July 2022 - Aug 2023 )</span>
+                    </div>
+                    <div class="work-desc">
+                        <span id="two"></span>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="third-section">
+                <h1>Projects</h1>
+                <div class="box"></div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card rounded-2xl shadow-md p-6" style="background: lightblue;">
+                            <img src="your-image1.png" alt="Panchayat Chat App" class="w-full h-40 object-cover rounded-lg mb-4" />
+                            <h3 class="text-xl font-semibold mb-2">Washkart - Fashion App</h3>
+                            <p class="text-sm text-gray-600 mb-4">
+                            Developed an E-commerce Web application using the Angular, Bootstrap and NestJS, where users can buy trendy clothes and such items...
+                            </p>
+                            <div class="flex space-x-3">
+                            <a href="#" class="btn-s text-white px-4 py-2 rounded-md text-sm">Source Code</a>
+                            <a href="#" class="btn-v text-white-900 px-4 py-2 rounded-md text-sm">View</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card rounded-2xl shadow-md p-6" style="background: lightblue;">
+                            <img src="your-image2.png" alt="Restaurant App" class="w-full h-40 object-cover rounded-lg mb-4" />
+                            <h3 class="text-xl font-semibold mb-2">Bank App</h3>
+                            <p class="text-sm text-gray-600 mb-4">
+                            Built a Bank Service platform using Next.js 14 with App Router, Tailwind CSS, and AppWrite. Includes authentication and more...
+                            </p>
+                            <div class="flex space-x-3">
+                            <a href="#" class="btn-s text-white px-4 py-2 rounded-md text-sm">Source Code</a>
+                            <a href="#" class="btn-v text-white-900 px-4 py-2 rounded-md text-sm">View</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card rounded-2xl shadow-md p-6" style="background: lightblue;">
+                            <img src="your-image3.png" alt="File Sharing App" class="w-full h-40 object-cover rounded-lg mb-4" />
+                            <h3 class="text-xl font-semibold mb-2">File Sharing App</h3>
+                            <p class="text-sm text-gray-600 mb-4">
+                            Developed a file-sharing app using React with seamless file uploads, instant link sharing, and mobile-responsive design...
+                            </p>
+                            <div class="flex space-x-3">
+                            <a href="#" class="btn-s text-white px-4 py-2 rounded-md text-sm">Source Code</a>
+                            <a href="#" class="btn-v text-gray-900 px-4 py-2 rounded-md text-sm">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="fourth-section">
+                <h1>Skills & Expertise</h1>
+                <div class="box"></div>
+                <div class="work-header">
+                    With a solid foundation in Web Development, I have honed my skills across a wide range of technologies, including:
+                </div>
+                <div class="skill-desc">
+                    <div class="desc">
+                        <h4>Frontend Development :</h4>
+                        <p>Angular, React, Next.js, Tailwind CSS, Bootstrap, Angular UI, Shadcn UI, Material UI,</p>
+                    </div>
+                    <div class="desc">
+                        <h4>Backend Development :</h4>
+                        <p>Node.js, Express.js, Nest.js, MongoDB and RESTful APIs.</p>
+                    </div>
+                    <div class="desc">
+                        <h4>Full-Stack Development :</h4>
+                        <p>MEAN stack development.</p>
+                    </div>
+                    <div class="desc">
+                        <h4>Version Control :</h4>
+                        <p>Git and GitHub for efficient code management and collabration.</p>
+                    </div>
+                    <div class="desc">
+                        <h4>Database Management :</h4>
+                        <p>NoSQL database with MongoDB and Mongoose ODM or MySQL.</p>
+                    </div>
+                    <div class="desc">
+                        <h4>Testing & Debugging :</h4>
+                        <p>Experience with unit and integration testing using Jest and Karma.</p>
+                    </div>
+                    <div class="desc">
+                        <h4>Agile & Scrum :</h4>
+                        <p>Familiar with Agile methodologies and Scrum practices.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="five-section">
+                <h1>Contact</h1>
+                <div class="box"></div>
+                <div class="work-title">Please fill out the form below to reach out to me</div>
+                <div class="m">
+                    <form class="card rounded-2xl shadow-md p-12">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Enter name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="msg" class="form-label">Message</label>
+                            <textarea class="form-control" id="msg" rows="3"></textarea>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <button class="btn btn-primary" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-first">Ashu's Portfolio</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-second">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">Projects</a></li>
+                                <li><a href="/">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">                
+                        <div class="footer-third">
+                            <div>Connect with me</div>
+                            <div class="connect-links">
+                                <img src="" />
+                                <img src="" />
+                                <img src="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                Copyright © ashuportfolio.com | All rights reserved
+            </div>
+        </footer>
+
+        <!-- Load library from the CDN -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+            strings: ['Web Developer...', 'Front-end Developer...', 'Web Designer...', 'Freelancer...'],
+            typeSpeed: 50,
+            });
+        </script>
+        <script>
+            var typed = new Typed('#one', {
+            strings: ['• Developed and maintained front-end interfaces using modern JavaScript frameworks like <span style="color: rgb(15, 61, 82);">Angular</span>. <br><br> • Collaborated with senior developers to build and deploy <span style="color: rgb(15, 61, 82);">RESTful APIs</span> using <span style="color: rgb(15, 61, 82);">Node.js or NestJS</span>. <br><br> • Wrote clean, maintainable code following industry best practices and participated in regular code reviews. <br><br> • Built responsive web applications using <span style="color: rgb(15, 61, 82);">HTML5, CSS3,</span> and <span style="color: rgb(15, 61, 82);">Bootstrap</span> to ensure cross-browser compatibility. <br><br> • Integrated third-party APIs and tools to enhance application functionality <span style="color: rgb(15, 61, 82);">(e.g., Firebase, payment gateways)</span>. <br><br> • Used <span style="color: rgb(15, 61, 82);">Git and GitHub/GitLab</span> for version control and team collaboration. <br><br> • Worked closely with cross-functional teams including <span style="color: rgb(15, 61, 82);">designers, testers, and product managers</span> in <span style="color: rgb(15, 61, 82);">Agile/Scrum environments</span>. <br><br> • Took initiative in identifying bugs and suggesting <span style="color: rgb(15, 61, 82);">UI/UX</span> improvements for better user experience.'],
+            typeSpeed: 10,
+            });
+        </script>
+        <script>
+            var typed = new Typed('#two', {
+            strings: ['• Developed and maintained responsive websites using <span style="color: rgb(15, 61, 82);">HTML5, CSS3, JavaScript</span>, and modern frameworks like <span style="color: rgb(15, 61, 82);">Angular or React</span>. <br><br> • Designed and implemented UI components for web applications with pixel-perfect layouts using <span style="color: rgb(15, 61, 82);">Tailwind CSS, Bootstrap, and SCSS</span>. <br><br> • Built interactive and user-friendly web pages with focus on performance and <span style="color: rgb(15, 61, 82);">mobile-first design</span>. <br><br> • Consumed RESTful APIs and handled dynamic data rendering using <span style="color: rgb(15, 61, 82);">Axios, Fetch, or HttpClient</span>. <br><br> • Connected web applications to <span style="color: rgb(15, 61, 82);">MySQL, MongoDB, or Firebase</span> Realtime Database for data persistence. <br><br> • Developed <span style="color: rgb(15, 61, 82);">REST APIs</span> and integrated them into the frontend, ensuring seamless data exchange. <br><br> • Eagerly adopted new technologies and kept up-to-date with web development trends. <br><br> • Created and maintained back-end logic using <span style="color: rgb(15, 61, 82);">Node.js, Express, or NestJS</span>.'],
+            typeSpeed: 10,
+            });
+        </script>
+
+        <script>
+            new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                slidesPerView: 2,
+                },
+                1024: {
+                slidesPerView: 3,
+                },
+            },
+            });
+        </script>
+    </body>
+</html>

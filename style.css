@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(24, 144, 144) !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(6, 185, 185);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+nav ul li a:hover{
+    font-size: 1.05rem;
+    color: rgb(49, 89, 76);
+}
+
+main hr{
+    border: 0;
+    background: rgb(6, 185, 185);
+    margin: 40px 84px;
+    height: 1px;
+}
+.left{
+    font-size: 1.5rem;
+}
+.first-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+.first-section > div{
+    width: 36%;
+}
+.left-section{
+    font-size: 2.5rem;
+}
+.left-section .desc{
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: rgb(208, 212, 216);
+}
+.right-section img{
+    width: 70%;
+}
+
+.purple{
+    color: rgb(15, 61, 82);
+}
+.text-gray{
+    color: rgb(15, 61, 82);
+}
+
+#element{
+    color: rgb(15, 61, 82);
+}
+
+.second-section{
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+}
+.second-section h1{
+    font-size: 1.9rem;
+}
+.second-section .box{
+    width: 80vw;
+    height: 1px;
+    background: rgb(222, 230, 230);
+    margin: 30px 0;
+}
+.second-section .work-header{
+    margin: 0 40px;
+    font-size: 1.5rem;
+}
+.second-section .work-title{
+    margin: 10px 40px;
+    font-size: 1.3rem;
+    color: rgb(27, 57, 70);
+}
+.second-section .work-desc{
+    margin: 20px 80px;
+}
+
+.second-section .work-title .text-gray{
+    color: rgb(204, 219, 226);
+    font-size: 1rem;
+}
+
+.third-section{
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+}
+.third-section h1{
+    font-size: 1.9rem;
+}
+.third-section .box{
+    width: 80vw;
+    height: 1px;
+    background: rgb(222, 230, 230);
+    margin: 30px 0;
+}
+.third-section .card{
+    transition: 0.3s ease-in;
+}
+.third-section .space-x-3 .btn-s{
+    background: teal;
+}
+.third-section .space-x-3 .btn-s:hover{
+    background: black;
+}
+.third-section .space-x-3 .btn-v{
+    background: antiquewhite;
+}
+.third-section .space-x-3 .btn-v:hover{
+    background: black;
+    color: aliceblue;
+}
+
+.fourth-section{
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+} 
+.fourth-section h1{
+    font-size: 1.9rem;
+}
+.fourth-section .box{
+    width: 80vw;
+    height: 1px;
+    background: rgb(222, 230, 230);
+    margin: 30px 0;
+}
+.fourth-section .work-header{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: rgb(208, 212, 216);
+}
+.fourth-section .skill-desc .desc{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    margin: 8px;
+}
+.fourth-section .skill-desc .desc h4{
+    color: rgb(27, 57, 70);
+    font-size: 1.3rem;
+}
+.fourth-section .skill-desc .desc p{
+    color: antiquewhite;
+    font-size: 1rem;
+}
+
+.five-section{
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+}
+.five-section h1{
+    font-size: 1.9rem;
+}
+.five-section .box{
+    width: 80vw;
+    height: 1px;
+    background: rgb(222, 230, 230);
+    margin: 30px 0;
+}
+.five-section .work-title{
+    text-align: center;
+}
+.five-section .m{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.five-section .card .text-center .btn{
+    background: teal;
+    width: 100%;
+}
+#one{
+    margin: 10px 0;
+}
+
+
+footer{
+    background: rgb(6, 185, 185);
+    
+}
+.footer{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    padding: 23px 0px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.footer .row{
+    width: 100%;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    margin: 10px 0;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.footer ul li a:hover{
+    font-size: 1.04rem;
+    color: rgb(49, 89, 76);
+}
+.footer-first{
+    padding: 50px 0px;   
+    font-size: 1.5rem;
+}
+footer .footer-rights{
+    text-align: center;
+    color: lightgray;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    nav{
+        flex-direction: column;
+        height: 80px;
+    }
+    nav ul li a:hover{
+        color: rgb(49, 89, 76);
+    }
+    .first-section{
+        flex-direction: column;
+        margin: 90px 0;
+        margin-bottom: 50px;
+    }
+    .first-section > div{
+        width: 87%;
+    }
+    .right{
+        margin-bottom: 10px;
+    }
+    .left-section{
+        font-size: 1.8rem;
+    }
+    .left-section .desc{
+        font-size: 1.3rem;
+    }
+    .right-section img{
+        width: 88%;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    main hr{
+        margin: 25px 20px;
+    }
+    .second-section, .third-section{
+        max-width: 90vw;
+        margin: 20px;
+    }
+    .second-section .box{
+        margin: 15px 0px;
+        width: 90vw;
+    }
+    .second-section .work-header{
+        margin: 0px 12px;
+        font-size: 1.2rem;
+    }
+    .second-section .work-title{
+        margin: 5px 15px;
+        font-size: 1rem;
+    }
+    .second-section .work-desc{
+        margin: 10px 25px;
+        font-size: 0.8rem;
+        margin-bottom: 25px;
+    }
+    .third-section .box{
+        margin: 15px 0px;
+        width: 90vw;
+    }
+    .fourth-section .box{
+        width: 90vw;
+        margin: 15px 0px;
+    }
+    .fourth-section .work-header{
+        font-size: 1.2rem;
+    }
+    .fourth-section .skill-desc .desc h4{
+        font-size: 1rem;
+    }
+    .fourth-section .skill-desc .desc p{
+        font-size: 0.8rem;
+        text-align: right;
+    }
+    .five-section, .fourth-section {
+        max-width: 90vw;
+        margin: 20px;
+    }
+    .five-section .box{
+        width: 90vw;
+        margin: 15px 0px;
+    }
+    .five-section .work-title{
+        font-size: 1rem;
+    }
+    .five-section .m{
+        margin: 10px;
+    }
+    .five-section .m .card{
+        padding: 20px;
+    }
+    .footer{
+        max-width: 90vw;
+    }
+    .footer .footer-first{
+        padding: 10px 0px ;
+    }
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 1100px) {
+    nav{
+        flex-direction: row;
+        height: 70px;
+    }
+    .first-section > div{
+        width: 88%;
+    }
+    .first-section{
+        flex-direction: column;
+        margin: 90px 0;
+        margin-bottom: 50px;
+    }
+    .right-section img{
+        width: 80%;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    main hr{
+        height: 2px;
+        margin: 40px 30px;
+    }
+    .second-section, .third-section{
+        max-width: 98vw;
+        margin: 40px;
+    }
+    .second-section .box{
+        margin: 15px 0px;
+        width: 89vw;
+    }
+    .second-section .work-desc{
+        margin: 20px 50px;
+        margin-bottom: 25px;
+    }
+    .third-section .box{
+        margin: 15px 0px;
+        width: 89vw;
+    }
+    .fourth-section, .five-section{
+        max-width: 98vw;
+        margin: 40px;
+    }
+    .fourth-section .box{
+        margin: 15px 0px;
+        width: 89vw;
+    }
+    .fourth-section .skill-desc .desc p{
+        text-align: right;
+    }
+    .five-section .box{
+        margin: 15px 0px;
+        width: 89vw;
+    }
+    .five-section .m .card {
+        padding: 30px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    nav{
+        flex-direction: row;
+        height: 70px;
+    }
+    .first-section > div{
+        width: 88%;
+    }
+    .first-section{
+        flex-direction: column;
+        margin: 90px 0;
+        margin-bottom: 50px;
+    }
+    .right-section img{
+        width: 80%;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .second-section, .third-section, .fourth-section{
+        max-width: 98vw;
+        margin: 40px;
+    }
+    .second-section .box{
+        width: 90vw;
+    }
+    .third-section .box{
+        width: 90vw;
+    }
+}
