@@ -94,8 +94,8 @@
                             Built a Bank Service platform using Next.js 14 with App Router, Tailwind CSS, and AppWrite. Includes authentication and more...
                             </p>
                             <div class="flex space-x-3">
-                            <a href="#" class="btn-s text-white px-4 py-2 rounded-md text-sm">Source Code</a>
-                            <a href="#" class="btn-v text-white-900 px-4 py-2 rounded-md text-sm">View</a>
+                            <a href="https://github.com/Sharmaji-CDA/bank-app.git"  class="btn-s text-white px-4 py-2 rounded-md text-sm">Source Code</a>
+                            <a href="bank-app-one-gamma.vercel.app" class="btn-v text-white-900 px-4 py-2 rounded-md text-sm">View</a>
                             </div>
                         </div>
 
@@ -165,14 +165,14 @@
                 <div class="box"></div>
                 <div class="work-title">Please fill out the form below to reach out to me</div>
                 <div class="m">
-                    <form class="card rounded-2xl shadow-md p-12" action="https://formspree.io/f/xwpobpgo" method="POST">
+                    <form class="card rounded-2xl shadow-md p-12" id="contact-form" action="https://formspree.io/f/xwpobpgo" method="POST">
                         <div class="mb-3">
                             <label for="name">Name</label>
                             <input type="name" name="name" placeholder="Enter name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" placeholder="Enter email here" required>
+                            <input type="email" name="email" placeholder="Enter email" required>
                         </div>
                         <div class="mb-3">
                             <label>Message:</label>
@@ -183,6 +183,8 @@
                             <button class="btn btn-primary" type="submit">Send</button>
                         </div>
                     </form>
+                    <!-- Success Message (hidden initially) -->
+                    <p id="success-msg" style="color: lightgreen; display: none;">Thank you! Your message has been sent.</p>
                 </div>
             </section>
         </main>
@@ -260,6 +262,35 @@
                 slidesPerView: 3,
                 },
             },
+            });
+        </script>
+
+        <script>
+            const form = document.getElementById('contact-form');
+            const successMsg = document.getElementById('success-msg');
+        
+            form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+        
+            try {
+                const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+                });
+        
+                if (response.ok) {
+                successMsg.style.display = 'block'; // Show success message
+                form.reset(); // Clear form
+                } else {
+                alert("Oops! Something went wrong.");
+                }
+            } catch (error) {
+                alert("Network error. Please try again.");
+            }
             });
         </script>
     </body>
